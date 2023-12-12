@@ -1,0 +1,5 @@
+{% extends "layout.njk" %}
+{% block main %}
+<h1>Home</h1>
+<button type="submit" hx-post="/demo" hx-swap="afterend" hx-target=".list">Add Todo</button>
+<div class="list"></div {% endblock %}
