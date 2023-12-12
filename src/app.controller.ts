@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Render } from '@nestjs/common';
+import { Controller, Delete, Get, Post, Render } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -15,7 +15,10 @@ export class AppController {
   @Render('demo/demo')
   demo() {
     return {
-      id: Math.random() * 100,
+      id: 100,
     };
   }
+
+  @Delete('demo')
+  delete() {}
 }

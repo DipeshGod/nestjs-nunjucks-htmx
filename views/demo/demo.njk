@@ -1,3 +1,4 @@
-<div class="task">
+<div class="task-{{id}}">
     {{id}} - new todo
+    <button hx-delete="/demo" hx-swap="delete" hx-target=".task-{{id}}">Delete</button>
 </div>
